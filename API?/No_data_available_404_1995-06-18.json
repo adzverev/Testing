@@ -1,0 +1,73 @@
+GET https://api.nasa.gov/planetary/apod?api_key=iK96ookfULpedbv6TgqnswB9ch69O1Fyok5hTnN5&date=1995-06-18: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.1.64",
+        "family": "IPv4",
+        "port": 52791
+      },
+      "remote": {
+        "address": "52.61.166.104",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "api.nasa.gov",
+          "alternativeNames": "DNS:api.nasa.gov"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Let's Encrypt",
+          "commonName": "R3"
+        },
+        "validFrom": "Aug 20 18:19:49 2022 GMT",
+        "validTo": "Nov 18 18:19:48 2022 GMT",
+        "fingerprint": "91:47:A5:51:E0:35:88:41:82:03:79:3D:8E:CF:B7:18:CF:FC:EF:F2",
+        "serialNumber": "044b5f8f4b4687a462b0a7bf7bd78192bf86"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "4ca331e9-6387-4b20-998f-14ef146a67f3",
+    "host": "api.nasa.gov",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Sat, 08 Oct 2022 17:43:08 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "X-RateLimit-Limit, X-RateLimit-Remaining",
+    "age": "1",
+    "strict-transport-security": "max-age=31536000; preload",
+    "via": "http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+    "x-cache": "MISS",
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1967",
+    "x-vcap-request-id": "bd21e88e-5776-4fc2-4c0b-8e1164212e1e",
+    "x-frame-options": "DENY",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "content-encoding": "gzip"
+  },
+  "Response Body": "{\"code\":404,\"msg\":\"No data available for date: 1995-06-18\",\"service_version\":\"v1\"}\n"
+}
